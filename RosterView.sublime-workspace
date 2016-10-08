@@ -1,0 +1,259 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"g",
+				"getString\tfunction"
+			],
+			[
+				"s",
+				"setString\tfunction"
+			],
+			[
+				"app",
+				"applicationSettings\talias"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jsummers/IronGoatProjects/RosterView2"
+	],
+	"file_history":
+	[
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/roster.component.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/App_Resources/Android/AndroidManifest.xml",
+		"/Users/jsummers/IronGoatProjects/RosterView2/package.json",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/package.json",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/App_Resources/Android/drawable-nodpi/splash_screen.xml",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/main.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/app.component.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/shared/roster.service.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/roster.component.html",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/app.css",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/App_Resources/Android/values/styles.xml",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/shared/player.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/player.js.map",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/app.component.js.map",
+		"/Users/jsummers/IronGoatProjects/RosterView2/app/player.ts",
+		"/Users/jsummers/IronGoatProjects/CentralPaCampsLand/www/Frantz.html",
+		"/Users/jsummers/IronGoatProjects/CentralPaCampsLand/www/Fuller.html",
+		"/Users/jsummers/IronGoatProjects/CentralPaCampsLand/www/Bubb.html",
+		"/Users/jsummers/IronGoatProjects/CentralPaCampsLand/www/BronaughSmith.html",
+		"/Users/jsummers/Projects/CentralPaCampsLand/www/Durham/Durham.html",
+		"/Users/jsummers/Desktop/CDrugPrice.cls",
+		"/Users/jsummers/Desktop/2016-02-24 13_05_53-Services.png",
+		"/Users/jsummers/Projects/CentralPaCampsLand/www/index.htm",
+		"/Users/jsummers/Projects/CentralPaCampsLand/www/Sharpness.html",
+		"/Users/jsummers/Projects/CentralPaCampsLand/www/BronaughSmith.html",
+		"/Users/jsummers/Projects/CentralPaCampsLand/www/Hoffman.html",
+		"/Users/jsummers/Projects/CentralPaCampsLand/www/Holz1.html",
+		"/Users/jsummers/Downloads/wpf-client/schema-update-develop-1649.sql",
+		"/Users/jsummers/Projects/BowlPicks/app/index-async.html",
+		"/Users/jsummers/Projects/BowlPicks/app/view2/view2.js",
+		"/Users/jsummers/Projects/BowlPicks/app/view1/view1.js",
+		"/Users/jsummers/Documents/Angular/BowlPicks/index.html",
+		"/Users/jsummers/Documents/Angular/BowlPicks/app.js",
+		"/Users/jsummers/Downloads/TreeListControlImageSize/TreeListControlImageSize/MainWindow.xaml.cs",
+		"/Users/jsummers/Projects/mylan-epipen-mobile/src/Mylan.EpiPen/Mylan.EpiPen.iOS/Mylan.EpiPen.iOS.csproj",
+		"/Users/jsummers/Projects/mylan-epipen-mobile/src/Mylan.EpiPen/Mylan.EpiPen.iOS/Info.plist"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"icon",
+			"walker",
+			"102.35",
+			"remar",
+			"winter",
+			"99,9",
+			"clearfield",
+			"center c",
+			"center",
+			"pausecontent2",
+			"snow shoe tow",
+			"avgunit",
+			"GetActualCost",
+			"actualPackageCost",
+			"actual",
+			"GetContractActPkgCost",
+			"parcel",
+			"129,9",
+			"1299",
+			"ipain",
+			"artwo",
+			"itun",
+			"ipa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RosterView.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"in",
+				"index.htm"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 345.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

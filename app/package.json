@@ -5,19 +5,13 @@
     },
     "name": "tns-template-hello-world-ng",
     "main": "main.js",
-    "version": "2.3.1",
-    "author": "Telerik <support@telerik.com>",
-    "description": "Nativescript Angular Hello World template",
+    "version": "0.9.1",
+    "author": "Iron Goat Software",
+    "description": "Offline college football roster viewing app.",
     "license": "BSD",
     "keywords": [
-        "telerik",
-        "mobile",
-        "angular",
-        "nativescript",
-        "{N}",
-        "tns",
-        "appbuilder",
-        "template"
+        "roster",
+        "football"
     ],
     "repository": {
         "type": "git",
