@@ -60,11 +60,13 @@ export class RosterComponent implements OnInit {
 
     }
 
-    refreshFromServer()
+    public refreshFromServer()
     {
+        console.log("button pressed");
         this.isLoading1 = true;
         this.rosterService.getRosterForTeam(810, true)
         .subscribe(loadedRoster => {
+            this.roster1 = [];
             loadedRoster.forEach((rosterObject) => {
                 this.roster1.push(rosterObject);
             });
@@ -74,6 +76,7 @@ export class RosterComponent implements OnInit {
         this.isLoading2 = true;
         this.rosterService.getRosterForTeam(803, true)
         .subscribe(loadedRoster => {
+            this.roster2 = [];
             loadedRoster.forEach((rosterObject) => {
                 this.roster2.push(rosterObject);
             });

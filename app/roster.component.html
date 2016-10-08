@@ -1,4 +1,5 @@
 <StackLayout>
+	<Button (tap)="refreshFromServer()" text="Refresh"></Button>
 	<TabView>
 		<StackLayout *tabItem="{title: teamName1}" >
 			<ActivityIndicator [busy]="isLoading1" [visibility]="isLoading1 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
@@ -30,7 +31,6 @@
 	    </StackLayout>
 	</TabView>
 	
-	<Button tap="refreshFromServer">Refresh</Button>
 
 	<!-- <ListPicker #teamPicker items={{teams}} (selectedIndexChange)="selectedTeamChanged(teamPicker)"></ListPicker>     -->
 	

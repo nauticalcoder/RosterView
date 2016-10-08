@@ -36,9 +36,14 @@ export class RosterService {
        var json = applicationSettings.getString(key, "[]");
        console.log("From cache");
        console.log(json);
+       var parsed = JSON.parse(json);
        let playerList: Player[] = [];
-       playerList.push(new Player("1", "test", "test", "te", "te"));
-       playerList.push(new Player("1", "test", "test", "te", "te"));
+       parsed.forEach((player) => {
+            playerList.push(new Player(player.Number, player.LastName, player.FirstName, player.Position, player.Class));
+       });
+
+       // playerList.push(new Player("1", "test", "test", "te", "te"));
+       // playerList.push(new Player("1", "test", "test", "te", "te"));
        let result = Observable.of(playerList);
        return result;
      }
