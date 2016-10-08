@@ -35,9 +35,9 @@ export class RosterComponent implements OnInit {
     }
 
     ngOnInit() {
-        // Hide the action bar 
-        this.page = <Page>topmost().currentPage;
-        this.page.actionBarHidden = true;
+        // // Hide the action bar 
+        // this.page = <Page>topmost().currentPage;
+        // this.page.actionBarHidden = true;
 
         //this.isLoading1 = true;
         this.rosterService.getRosterForTeam(810, false)

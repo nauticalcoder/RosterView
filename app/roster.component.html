@@ -1,5 +1,12 @@
+<ActionBar title="Roster View">
+  	<ActionItem (tap)="refreshFromServer()"
+      ios.systemIcon="13" ios.position="left"
+      android.systemIcon="ic_menu_refresh" 
+      android.position="actionBar"></ActionItem>
+</ActionBar>
+
 <StackLayout>
-	<Button (tap)="refreshFromServer()" text="Refresh"></Button>
+	<!-- <Button (tap)="refreshFromServer()" text="Refresh"></Button> -->
 	<TabView>
 		<StackLayout *tabItem="{title: teamName1}" >
 			<ActivityIndicator [busy]="isLoading1" [visibility]="isLoading1 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
@@ -15,6 +22,7 @@
 	            </template>
 	        </ListView>
 	    </StackLayout>
+
 	    <StackLayout *tabItem="{title: teamName2}">
 			<ActivityIndicator [busy]="isLoading2" [visibility]="isLoading2 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
 	    	<ListView [items]=roster2>
