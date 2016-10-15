@@ -1,0 +1,13 @@
+<ActionBar title="Settings">
+	<NavigationButton android.systemIcon="ic_menu_back" text="Back" (tap)="goBack()"></NavigationButton>	  	
+</ActionBar>
+
+<GridLayout columns="auto, *, auto" rows="auto, auto" class="padded">
+
+	<Label class="settings-label" row="0" col="0" text="Home Team"></Label>
+	<Button class="settings-button" row="0" col="2" [text]="settingsService.team1.name" (tap)="changeTeam(1)"></Button>
+
+	<Label class="settings-label" row="1" col="0" text="Visiting Team"></Label>
+	<Button class="settings-button" row="1" col="2" [text]="settingsService.team2.name" (tap)="changeTeam(2)"></Button>
+
+</GridLayout>

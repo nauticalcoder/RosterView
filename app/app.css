@@ -1,4 +1,4 @@
-﻿button, label, stack-layout {
+﻿stack-layout, grid-layout {
     horizontal-align: center;    
 }
 
@@ -17,3 +17,29 @@ button {
     text-align: center;
     margin: 0 20;
 } 
+
+.padded {
+    padding: 0 10;
+}
+
+.even {
+    background-color: #DDDDDD;
+    padding: 0 10;
+}
+.odd {
+    padding: 0 10;
+}
+
+/* Settings */
+
+.settings-button {
+	background-color: #77091B32;
+	horizontal-align: left;
+	vertical-align:  middle;
+
+}
+
+.settings-label {
+	horizontal-align: left;
+	vertical-align:  middle;
+}

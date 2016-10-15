@@ -3,40 +3,47 @@
       ios.systemIcon="13" ios.position="left"
       android.systemIcon="ic_menu_refresh" 
       android.position="actionBar"></ActionItem>
+    <ActionItem (tap)="goSettings()"
+      ios.systemIcon="2" ios.position="right"
+      android.systemIcon="ic_menu_preferences" 
+      android.position="actionBar"></ActionItem>
 </ActionBar>
 
 <StackLayout>
 	<!-- <Button (tap)="refreshFromServer()" text="Refresh"></Button> -->
-	<TabView>
-		<StackLayout *tabItem="{title: teamName1}" >
-			<ActivityIndicator [busy]="isLoading1" [visibility]="isLoading1 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
-        	<ListView [items]=roster1>
-	            <template let-item='item' let-odd="odd" let-even="even">
-		            <GridLayout columns="50, *, *, 50, 50" [class.odd]="odd" [class.even]="even">
-		                <Label class="left" col="0" [text]='item.no' ></Label>
-		                <Label class="left" col="1" [text]='item.lastName' horizontalAlignment="left"></Label>
-		                <Label class="left" col="2" [text]='item.firstName' horizontalAlignment="left"></Label>
-		                <Label class="left" col="3" [text]='item.position' ></Label>
-		                <Label class="left" col="4" [text]='item.schoolClass' ></Label>	                
-		            </GridLayout>
-	            </template>
-	        </ListView>
-	    </StackLayout>
-
-	    <StackLayout *tabItem="{title: teamName2}">
-			<ActivityIndicator [busy]="isLoading2" [visibility]="isLoading2 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
-	    	<ListView [items]=roster2>
-	            <template let-item='item' let-odd="odd" let-even="even">
-		            <GridLayout columns="50, *, *, 50, 50" [class.odd]="odd" [class.even]="even">
-		                <Label col="0" [text]='item.no'></Label>
-		                <Label col="1" [text]='item.lastName' horizontalAlignment="left"></Label>
-		                <Label col="2" [text]='item.firstName' horizontalAlignment="left"></Label>
-		                <Label col="3" [text]='item.position'></Label>
-		                <Label col="4" [text]='item.schoolClass'></Label>	                
-		            </GridLayout>
-	            </template>
-	        </ListView>
-	    </StackLayout>
+	<TabView selectedColor="#091B32">
+ 		<template tabItem title="{{settingsService.team1.name}}">
+			<StackLayout>
+				<ActivityIndicator [busy]="isLoading1" [visibility]="isLoading1 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
+	        	<ListView [items]=roster1>
+		            <template let-item='item' let-odd="odd" let-even="even">
+			            <GridLayout columns="50, *, *, 50, 50" [class.odd]="odd" [class.even]="even">
+			                <Label class="left" col="0" [text]='item.no' ></Label>
+			                <Label class="left" col="1" [text]='item.lastName' horizontalAlignment="left"></Label>
+			                <Label class="left" col="2" [text]='item.firstName' horizontalAlignment="left"></Label>
+			                <Label class="left" col="3" [text]='item.position' ></Label>
+			                <Label class="left" col="4" [text]='item.schoolClass' ></Label>	                
+			            </GridLayout>
+		            </template>
+		        </ListView>
+		    </StackLayout>
+	    </template>
+    	<template tabItem title="{{settingsService.team2.name}}">
+		    <StackLayout>
+				<ActivityIndicator [busy]="isLoading2" [visibility]="isLoading2 ? 'visible' : 'collapse'" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
+		    	<ListView [items]=roster2>
+		            <template let-item='item' let-odd="odd" let-even="even">
+			            <GridLayout columns="50, *, *, 50, 50" [class.odd]="odd" [class.even]="even">
+			                <Label col="0" [text]='item.no'></Label>
+			                <Label col="1" [text]='item.lastName' horizontalAlignment="left"></Label>
+			                <Label col="2" [text]='item.firstName' horizontalAlignment="left"></Label>
+			                <Label col="3" [text]='item.position'></Label>
+			                <Label col="4" [text]='item.schoolClass'></Label>	                
+			            </GridLayout>
+		            </template>
+		        </ListView>
+		    </StackLayout>
+	    </template>
 	</TabView>
 	
 

@@ -1,11 +1,11 @@
-{
+    {
     "private": false,
     "nativescript": {
-        "id": "org.nativescript.helloworldng"
+        "id": "com.irongoatsoftware.rosterview"
     },
     "name": "tns-template-hello-world-ng",
     "main": "main.js",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "author": "Iron Goat Software",
     "description": "Offline college football roster viewing app.",
     "license": "BSD",

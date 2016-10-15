@@ -4,9 +4,13 @@ import { Page } from "ui/page";
 import { LoadingIndicator } from "nativescript-loading-indicator";
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Router } from "@angular/router";
 
 import { Player } from "./shared/player";
+import { Team } from "./shared/team";
 import { RosterService } from "./shared/roster.service";
+import { TeamService } from "./shared/team.service";
+import { SettingsService } from "./shared/settings.service";
 
 @Component({
     selector: "my-app",
@@ -17,21 +21,19 @@ import { RosterService } from "./shared/roster.service";
 @Injectable()
 export class RosterComponent implements OnInit {
  
-    public roster1: Array<Player> = [];
-    public roster2: Array<Player> = [];
+    roster1: Array<Player> = [];
+    roster2: Array<Player> = [];
 
     page: Page;
-    teamName1: string;
-    teamName2: string;
-
+   
     isLoading1 = false;
     isLoading2 = false;
     
-    constructor(private http: Http, private rosterService: RosterService){
-
-        this.teamName1 = "Penn State";
-        this.teamName2 = "Maryland";
-       
+    constructor(private http: Http, private router: Router, private rosterService: RosterService, private settingsService: SettingsService){
+        
+        this.router = router;
+        this.settingsService = settingsService;
+               
     }
 
     ngOnInit() {
@@ -40,31 +42,37 @@ export class RosterComponent implements OnInit {
         // this.page.actionBarHidden = true;
 
         //this.isLoading1 = true;
-        this.rosterService.getRosterForTeam(810, false)
-        .subscribe(loadedRoster => {
-            loadedRoster.forEach((rosterObject) => {
-                this.roster1.push(rosterObject);
+        if (this.settingsService.team1)
+        {
+            this.rosterService.getRosterForTeam(this.settingsService.team1.id, false)
+            .subscribe(loadedRoster => {
+                loadedRoster.forEach((rosterObject) => {
+                    this.roster1.push(rosterObject);
+                });
+                //this.isLoading1 = false;
             });
-            //this.isLoading1 = false;
-        });
+        }
 
-        //this.isLoading2 = true;
-        this.rosterService.getRosterForTeam(803, false)
-        .subscribe(loadedRoster => {
-            loadedRoster.forEach((rosterObject) => {
-                this.roster2.push(rosterObject);
+        if (this.settingsService.team2)
+        {   
+            //this.isLoading2 = true;
+            this.rosterService.getRosterForTeam(this.settingsService.team2.id, false)
+            .subscribe(loadedRoster => {
+                loadedRoster.forEach((rosterObject) => {
+                    this.roster2.push(rosterObject);
+                });
+                //this.isLoading2 = false;
             });
-            //this.isLoading2 = false;
-        });
-
+        }
 
     }
 
     public refreshFromServer()
     {
         console.log("button pressed");
+        console.log(this.settingsService.team1.id);
         this.isLoading1 = true;
-        this.rosterService.getRosterForTeam(810, true)
+        this.rosterService.getRosterForTeam(this.settingsService.team1.id, true)
         .subscribe(loadedRoster => {
             this.roster1 = [];
             loadedRoster.forEach((rosterObject) => {
@@ -74,7 +82,7 @@ export class RosterComponent implements OnInit {
         });
 
         this.isLoading2 = true;
-        this.rosterService.getRosterForTeam(803, true)
+        this.rosterService.getRosterForTeam(this.settingsService.team2.id, true)
         .subscribe(loadedRoster => {
             this.roster2 = [];
             loadedRoster.forEach((rosterObject) => {
@@ -82,6 +90,10 @@ export class RosterComponent implements OnInit {
             });
             this.isLoading2 = false;
         });        
+    }
+
+    public goSettings(){
+        this.router.navigate(["settings"]);
     }
 
 }

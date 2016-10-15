@@ -21,6 +21,7 @@
     "@angular/router": "3.0.1",
     "nativescript-angular": "1.0.1",
     "nativescript-loading-indicator": "^2.2.1",
+    "nativescript-sectioned-list-view": "^0.3.2",
     "reflect-metadata": "^0.1.8",
     "tns-core-modules": "2.3.0"
   },
