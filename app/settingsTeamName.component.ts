@@ -40,6 +40,8 @@ export class SettingsTeamNameComponent implements OnInit {
         this.route.params.forEach((params: Params) => {
              this.teamId = +params['id']; // (+) converts string 'id' to a number
            });
+        
+        console.log("Edit Team: " + this.teamId);
 
         this.isLoading = true;
 

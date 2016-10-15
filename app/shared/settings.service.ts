@@ -8,7 +8,7 @@ export class SettingsService {
   
   private _team1:Team;
   get team1():Team {
-    this._team1 = JSON.parse(applicationSettings.getString('team1'));
+    this._team1 = JSON.parse(applicationSettings.getString('team1', '{}'));
     return this._team1;
   }
   set team1(value:Team) {
@@ -18,7 +18,7 @@ export class SettingsService {
 
   private _team2:Team;
   get team2():Team {
-    this._team2 = JSON.parse(applicationSettings.getString('team2'));
+    this._team2 = JSON.parse(applicationSettings.getString('team2', '{}'));
     return this._team2;
   }
   set team2(value:Team) {

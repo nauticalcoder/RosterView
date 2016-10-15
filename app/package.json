@@ -1,7 +1,7 @@
     {
     "private": false,
     "nativescript": {
-        "id": "com.irongoatsoftware.rosterview"
+        "id": "com.irongoatsoftware.RosterView"
     },
     "name": "tns-template-hello-world-ng",
     "main": "main.js",

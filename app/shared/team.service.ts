@@ -17,8 +17,9 @@ export class TeamService {
   private teams: Team[] = [];
 
   getTeamList():Observable<Array<Team>> {
+    console.log("Get teams");
     //let key = `teams`;
-    if (this.teams.length > 0){
+    if (this.teams.length > 0) {
       let result = Observable.of(this.teams);
       return result;
     } else{

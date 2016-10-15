@@ -4,12 +4,60 @@
 		"selected_items":
 		[
 			[
-				"g",
-				"getString\tfunction"
+				"margin",
+				"margin"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"con",
+				"console\tvar"
+			],
+			[
+				"t",
+				"teamList\tproperty"
+			],
+			[
+				"se",
+				"settingsService\tproperty"
+			],
+			[
+				"sett",
+				"settingsService\tparameter"
 			],
 			[
 				"s",
-				"setString\tfunction"
+				"stringify\tmethod"
+			],
+			[
+				"Sett",
+				"SettingsService\talias"
+			],
+			[
+				"_t",
+				"_teamName1"
+			],
+			[
+				"team",
+				"teamName1"
+			],
+			[
+				"nu",
+				"number\tkeyword"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ro",
+				"routerExtensions\tproperty"
+			],
+			[
+				"g",
+				"getString\tfunction"
 			],
 			[
 				"app",
@@ -19,6 +67,92 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/settings.component.html",
+			"settings":
+			{
+				"buffer_size": 620,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/roster.component.html",
+			"settings":
+			{
+				"buffer_size": 2682,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/package.json",
+			"settings":
+			{
+				"buffer_size": 1210,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/App_Resources/Android/values/strings.xml",
+			"settings":
+			{
+				"buffer_size": 174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/App_Resources/Android/AndroidManifest.xml",
+			"settings":
+			{
+				"buffer_size": 1400,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.txt",
+			"settings":
+			{
+				"buffer_size": 203,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/App_Resources/Android/values/colors.xml",
+			"settings":
+			{
+				"buffer_size": 284,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.css",
+			"settings":
+			{
+				"buffer_size": 551,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/settingsTeamName.component.html",
+			"settings":
+			{
+				"buffer_size": 734,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -64,10 +198,36 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jsummers/IronGoatProjects/RosterView2"
+		"/Users/jsummers/IronGoatProjects/RosterView",
+		"/Users/jsummers/IronGoatProjects/RosterView/app",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/App_Resources/Android",
+		"/Users/jsummers/IronGoatProjects/RosterView/node_modules/nativescript-angular"
 	],
 	"file_history":
 	[
+		"/Users/jsummers/IronGoatProjects/RosterView/app/settings.component.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/roster.component.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/settingsTeamName.component.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/shared/team.service.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/App_Resources/Android/values/colors.xml",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/settingsTeamName.component.html",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/main.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.routing.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/settings.component.js",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/settings.component.html",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/shared/roster.service.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/shared/team.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/roster.component.html",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/shared/settings.service.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/package.json",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.component.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.component.js",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.css",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/App_Resources/Android/values/styles.xml",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/App_Resources/Android/values/strings.xml",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.routes.ts",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.routes.js",
+		"/Users/jsummers/IronGoatProjects/RosterView/app/app.routing.js",
 		"/Users/jsummers/IronGoatProjects/RosterView2/app/roster.component.ts",
 		"/Users/jsummers/IronGoatProjects/RosterView2/app/App_Resources/Android/AndroidManifest.xml",
 		"/Users/jsummers/IronGoatProjects/RosterView2/package.json",
@@ -107,13 +267,14 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -121,6 +282,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"audi",
+			"settings",
+			"editTeam",
 			"icon",
 			"walker",
 			"102.35",
@@ -161,8 +325,309 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/settings.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/roster.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								525,
+								525
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								355
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/App_Resources/Android/values/strings.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/App_Resources/Android/AndroidManifest.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1084,
+								1084
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "build.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								784,
+								784
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/App_Resources/Android/values/colors.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/settingsTeamName.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 734,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
 			]
 		}
 	],

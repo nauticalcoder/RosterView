@@ -4,7 +4,7 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.RosterView2",
+    "id": "com.irongoatsoftware.RosterView",
     "tns-android": {
       "version": "2.3.0"
     }
