@@ -17,7 +17,7 @@ export class RosterService {
     let key = `team-${teamId}`;
 
     if (refresh){
-      let url = "http://rosterview.azurewebsites.net/api/" + 'player?teamId=' + teamId;
+      let url = "http://irongoatarmory.com/FFLInventory/api/v1/player?team_id=" + teamId;
       let result =  this.http.get(url)
         .map(response => {
           var json = response.json();
@@ -27,7 +27,7 @@ export class RosterService {
         .map(data => {
           let playerList: Player[] = [];
           data.forEach((player) => {
-            playerList.push(new Player(player.Number, player.LastName, player.FirstName, player.Position, player.Class));
+            playerList.push(new Player(player.number, player.last_name, player.first_name, player.position, player.school_class));
           });
           return playerList;
         });
@@ -39,7 +39,7 @@ export class RosterService {
        var parsed = JSON.parse(json);
        let playerList: Player[] = [];
        parsed.forEach((player) => {
-            playerList.push(new Player(player.Number, player.LastName, player.FirstName, player.Position, player.Class));
+            playerList.push(new Player(player.number, player.last_name, player.first_name, player.position, player.school_class));
        });
 
        // playerList.push(new Player("1", "test", "test", "te", "te"));

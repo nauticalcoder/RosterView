@@ -5,6 +5,7 @@ import { LoadingIndicator } from "nativescript-loading-indicator";
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Router } from "@angular/router";
+import { RouterExtensions } from "nativescript-angular/router";
 
 import { Player } from "./shared/player";
 import { Team } from "./shared/team";
@@ -29,11 +30,13 @@ export class RosterComponent implements OnInit {
     isLoading1 = false;
     isLoading2 = false;
     
-    constructor(private http: Http, private router: Router, private rosterService: RosterService, private settingsService: SettingsService){
+    constructor(private http: Http, private router: Router, private rosterService: RosterService, 
+        private settingsService: SettingsService, private routerExtensions: RouterExtensions){
         
         this.router = router;
         this.settingsService = settingsService;
-               
+
+        this.routerExtensions = routerExtensions;
     }
 
     ngOnInit() {
@@ -93,7 +96,11 @@ export class RosterComponent implements OnInit {
     }
 
     public goSettings(){
-        this.router.navigate(["settings"]);
+        this.routerExtensions.navigate(["settings"],
+            {
+                animated: false
+                
+            });
     }
 
 }

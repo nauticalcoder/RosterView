@@ -71,7 +71,7 @@
 			"file": "app/settings.component.html",
 			"settings":
 			{
-				"buffer_size": 620,
+				"buffer_size": 644,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -123,7 +123,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 1090,
+				"buffer_size": 1093,
 				"line_ending": "Unix"
 			}
 		},
@@ -139,7 +139,7 @@
 			"file": "app/app.css",
 			"settings":
 			{
-				"buffer_size": 551,
+				"buffer_size": 567,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -200,8 +200,7 @@
 	[
 		"/Users/jsummers/IronGoatProjects/RosterView",
 		"/Users/jsummers/IronGoatProjects/RosterView/app",
-		"/Users/jsummers/IronGoatProjects/RosterView/app/App_Resources/Android",
-		"/Users/jsummers/IronGoatProjects/RosterView/node_modules/nativescript-angular"
+		"/Users/jsummers/IronGoatProjects/RosterView/app/shared"
 	],
 	"file_history":
 	[
@@ -334,15 +333,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 620,
+						"buffer_size": 644,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								216,
-								216
+								0,
+								0
 							]
 						],
 						"settings":
@@ -381,7 +380,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 90.0,
@@ -512,15 +512,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1090,
+						"buffer_size": 1093,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								784,
-								784
+								0,
+								0
 							]
 						],
 						"settings":
@@ -570,15 +570,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 551,
+						"buffer_size": 567,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								328,
-								328
+								0,
+								0
 							]
 						],
 						"settings":

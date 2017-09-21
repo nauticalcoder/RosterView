@@ -40,7 +40,11 @@ export class SettingsComponent implements OnInit {
 
     changeTeam(teamNumber:number){
         console.log(teamNumber); 
-        this.router.navigate(["edit-team", teamNumber]);
+        this.routerExtensions.navigate(["edit-team", teamNumber], 
+             {
+                animated: false
+                
+            });
     }
 
     public goBack(){

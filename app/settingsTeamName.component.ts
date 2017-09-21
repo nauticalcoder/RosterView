@@ -47,6 +47,7 @@ export class SettingsTeamNameComponent implements OnInit {
 
         this.teamService.getTeamList()
         .subscribe(teamList => {
+            console.log(teamList.length);
             teamList.forEach((team) => {
                 this.teamList.push(team);
             });
