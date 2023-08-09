@@ -1,1 +1,0 @@
-tns build android --release --key-store-path ../iron-goat-software-key.keystore --key-store-password USSMaine741 --key-store-alias irongoat --key-store-alias-password USSMaine741 --copy-to RosterView.apk
