@@ -16,6 +16,12 @@ function TabBarIcon(props: {
   return <MaterialCommunityIcons size={28} style={{ marginBottom: -3 }} {...props} />;
 }
 
+function SettingsButton(props: {
+}) {
+  return <MaterialCommunityIcons size={28} style={{ marginBottom: -3 }} {...props} name="settings-helper" />
+}
+
+
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
@@ -28,7 +34,8 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Penn State',
-          tabBarIcon: ({ color }) => <TabBarIcon name="alpha-h-box" color={color} />
+          tabBarIcon: ({ color }) => <TabBarIcon name="alpha-h-box" color={color} />,
+          headerRight: () => (<SettingsButton />)
         }}
       />
       <Tabs.Screen
@@ -36,6 +43,7 @@ export default function TabLayout() {
         options={{
           title: 'West Virginia',
           tabBarIcon: ({ color }) => <TabBarIcon name="alpha-v-box-outline" color={color} />,
+          headerRight: () => (<SettingsButton />)
         }}
       />
     </Tabs>
