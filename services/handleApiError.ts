@@ -1,7 +1,6 @@
-import {join, flatMap} from 'lodash';
-import {Alert, Platform} from 'react-native';
-import Toast from 'react-native-simple-toast';
-import {ApiError, ApiResponseErrors} from '../types';
+import { join, flatMap } from 'lodash';
+import toast from './toast';
+import { ApiError, ApiResponseErrors } from '../types';
 
 export default (error: ApiError): ApiResponseErrors | string | undefined => {
   const status = error?.response?.status;
@@ -25,19 +24,10 @@ export default (error: ApiError): ApiResponseErrors | string | undefined => {
 
   switch (status) {
     case 401:
-      Toast.showWithGravity('Invalid Authorization', Toast.SHORT, Toast.BOTTOM, [
-        'RCTModalHostViewController',
-      ]);
-      break;
-    case 400:
-      if (Platform.OS === 'android') {
-        Alert.alert(toastMessage);
-      } else {
-        Toast.showWithGravity(toastMessage, Toast.SHORT, Toast.BOTTOM);
-      }
+      toast('Invalid Authorization');
       break;
     default:
-      Toast.showWithGravity(toastMessage, Toast.SHORT, Toast.BOTTOM);
+      toast(toastMessage);
   }
 
   return response;

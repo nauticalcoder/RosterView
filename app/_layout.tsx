@@ -1,16 +1,20 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router/react-navigation';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RootSiblingParent } from 'react-native-root-siblings';
 import { useFonts } from 'expo-font';
-import { Link, SplashScreen, Stack } from 'expo-router';
+import { Link, Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import { Pressable, useColorScheme } from 'react-native';
 import { configureHttp } from '../utils';
 import Colors from '@/constants/Colors';
-import {apiBaseUrl} from '@/constants/ApiConfig';
+import { apiBaseUrl } from '@/constants/ApiConfig';
+import { SelectedTeamsProvider } from '@/context/SelectedTeams';
+import { RostersProvider } from '@/context/Rosters';
 
 configureHttp(apiBaseUrl);
+
 const queryClient = new QueryClient();
 
 export {
@@ -51,33 +55,36 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
-  const colorScheme = useColorScheme();
-  const queryClient = new QueryClient();
+  const colorScheme = useColorScheme() === 'dark' ? 'dark' : 'light';
   return (
     <RootSiblingParent>
-    <QueryClientProvider client={queryClient}>
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: true, title: "Roster View", headerRight: () => (
-            <Link href="/teamPickerModal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="gear"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
+      <QueryClientProvider client={queryClient}>
+        <SelectedTeamsProvider>
+          <RostersProvider>
+            <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+              <Stack>
+                <Stack.Screen name="(tabs)" options={{ headerShown: true, title: "Roster View", headerRight: () => (
+                    <Link href="/teamPickerModal" asChild>
+                      <Pressable>
+                        {({ pressed }) => (
+                          <FontAwesome
+                            name="gear"
+                            size={25}
+                            color={Colors[colorScheme].text}
+                            style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                          />
+                        )}
+                      </Pressable>
+                    </Link>
+                  ),
 
-         }} />
-        <Stack.Screen name="teamPickerModal" options={{ presentation: 'modal', title: "Team" }} />
-      </Stack>
-    </ThemeProvider>
-    </QueryClientProvider>
+                 }} />
+                <Stack.Screen name="teamPickerModal" options={{ presentation: 'modal', title: "Team" }} />
+              </Stack>
+            </ThemeProvider>
+          </RostersProvider>
+        </SelectedTeamsProvider>
+      </QueryClientProvider>
     </RootSiblingParent>
   );
 }

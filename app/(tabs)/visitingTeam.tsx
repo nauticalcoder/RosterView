@@ -1,13 +1,16 @@
 import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
-import PlayerList from '../../components/PlayerList';
+import { View } from '@/components/Themed';
+import PlayerList from '@/components/PlayerList';
+import { useSelectedTeams } from '@/context/SelectedTeams';
+import { useRosters } from '@/context/Rosters';
 
 export default function VisitingTeamScreen() {
+  const { visitingTeamName } = useSelectedTeams();
+  const { getRoster } = useRosters();
+
   return (
     <View style={styles.container}>
-      <PlayerList teamId={1} />
+      <PlayerList teamName={visitingTeamName} roster={getRoster(visitingTeamName)} />
     </View>
   );
 }
@@ -15,16 +18,5 @@ export default function VisitingTeamScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
   },
 });

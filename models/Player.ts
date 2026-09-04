@@ -1,8 +1,10 @@
-export type Team = {
-    id: number;
-    name: string;
-    position: string;
-    side: string;
-    class: string;
-    teamId: number;
-}
+export type Player = {
+  id: string;
+  name: string;
+  position: string;
+  height: string;
+  weight: string;
+  class: string;
+  birthplace: string;
+  jersey: string;
+};

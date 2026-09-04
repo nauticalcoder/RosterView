@@ -1,10 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { Alert, Platform, StyleSheet } from 'react-native';
-import NetInfo from '@react-native-community/netinfo';
+import { Platform, StyleSheet } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import Spinner from 'react-native-loading-spinner-overlay';
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+import { View } from '@/components/Themed';
 import {useTeamList} from '../api/useTeamList';
 import { useState } from 'react';
 
@@ -18,7 +16,6 @@ export default function ModalScreen() {
   // });
   const {teams, isFetching} = useTeamList();
   const [selectedHomeTeam, setSelectedHomeTeam] = useState();
-  const [selectedVisitingTeam, setSelectedVisitingTeam] = useState();
 
   return (
     <View style={styles.container}>

@@ -1,0 +1,692 @@
+[
+  {
+    "name": "Boston College Eagles",
+    "conference": "ACC",
+    "espnId": 103
+  },
+  {
+    "name": "California Golden Bears",
+    "conference": "ACC",
+    "espnId": 25
+  },
+  {
+    "name": "Clemson Tigers",
+    "conference": "ACC",
+    "espnId": 228
+  },
+  {
+    "name": "Duke Blue Devils",
+    "conference": "ACC",
+    "espnId": 150
+  },
+  {
+    "name": "Florida State Seminoles",
+    "conference": "ACC",
+    "espnId": 52
+  },
+  {
+    "name": "Georgia Tech Yellow Jackets",
+    "conference": "ACC",
+    "espnId": 59
+  },
+  {
+    "name": "Louisville Cardinals",
+    "conference": "ACC",
+    "espnId": 97
+  },
+  {
+    "name": "Miami Hurricanes",
+    "conference": "ACC",
+    "espnId": 2390
+  },
+  {
+    "name": "NC State Wolfpack",
+    "conference": "ACC",
+    "espnId": 152
+  },
+  {
+    "name": "North Carolina Tar Heels",
+    "conference": "ACC",
+    "espnId": 153
+  },
+  {
+    "name": "Pittsburgh Panthers",
+    "conference": "ACC",
+    "espnId": 221
+  },
+  {
+    "name": "SMU Mustangs",
+    "conference": "ACC",
+    "espnId": 2567
+  },
+  {
+    "name": "Stanford Cardinal",
+    "conference": "ACC",
+    "espnId": 24
+  },
+  {
+    "name": "Syracuse Orange",
+    "conference": "ACC",
+    "espnId": 183
+  },
+  {
+    "name": "Virginia Cavaliers",
+    "conference": "ACC",
+    "espnId": 258
+  },
+  {
+    "name": "Virginia Tech Hokies",
+    "conference": "ACC",
+    "espnId": 259
+  },
+  {
+    "name": "Wake Forest Demon Deacons",
+    "conference": "ACC",
+    "espnId": 154
+  },
+  {
+    "name": "Army Black Knights",
+    "conference": "American",
+    "espnId": 349
+  },
+  {
+    "name": "Charlotte 49ers",
+    "conference": "American",
+    "espnId": 2429
+  },
+  {
+    "name": "East Carolina Pirates",
+    "conference": "American",
+    "espnId": 151
+  },
+  {
+    "name": "Florida Atlantic Owls",
+    "conference": "American",
+    "espnId": 2226
+  },
+  {
+    "name": "Memphis Tigers",
+    "conference": "American",
+    "espnId": 235
+  },
+  {
+    "name": "Navy Midshipmen",
+    "conference": "American",
+    "espnId": 2426
+  },
+  {
+    "name": "North Texas Mean Green",
+    "conference": "American",
+    "espnId": 249
+  },
+  {
+    "name": "Rice Owls",
+    "conference": "American",
+    "espnId": 242
+  },
+  {
+    "name": "South Florida Bulls",
+    "conference": "American",
+    "espnId": 58
+  },
+  {
+    "name": "Temple Owls",
+    "conference": "American",
+    "espnId": 218
+  },
+  {
+    "name": "Tulane Green Wave",
+    "conference": "American",
+    "espnId": 2655
+  },
+  {
+    "name": "Tulsa Golden Hurricane",
+    "conference": "American",
+    "espnId": 202
+  },
+  {
+    "name": "UAB Blazers",
+    "conference": "American",
+    "espnId": 5
+  },
+  {
+    "name": "UTSA Roadrunners",
+    "conference": "American",
+    "espnId": 2636
+  },
+  {
+    "name": "Arizona State Sun Devils",
+    "conference": "Big 12",
+    "espnId": 9
+  },
+  {
+    "name": "Arizona Wildcats",
+    "conference": "Big 12",
+    "espnId": 12
+  },
+  {
+    "name": "BYU Cougars",
+    "conference": "Big 12",
+    "espnId": 252
+  },
+  {
+    "name": "Baylor Bears",
+    "conference": "Big 12",
+    "espnId": 239
+  },
+  {
+    "name": "Cincinnati Bearcats",
+    "conference": "Big 12",
+    "espnId": 2132
+  },
+  {
+    "name": "Colorado Buffaloes",
+    "conference": "Big 12",
+    "espnId": 38
+  },
+  {
+    "name": "Houston Cougars",
+    "conference": "Big 12",
+    "espnId": 248
+  },
+  {
+    "name": "Iowa State Cyclones",
+    "conference": "Big 12",
+    "espnId": 66
+  },
+  {
+    "name": "Kansas Jayhawks",
+    "conference": "Big 12",
+    "espnId": 2305
+  },
+  {
+    "name": "Kansas State Wildcats",
+    "conference": "Big 12",
+    "espnId": 2306
+  },
+  {
+    "name": "Oklahoma State Cowboys",
+    "conference": "Big 12",
+    "espnId": 197
+  },
+  {
+    "name": "TCU Horned Frogs",
+    "conference": "Big 12",
+    "espnId": 2628
+  },
+  {
+    "name": "Texas Tech Red Raiders",
+    "conference": "Big 12",
+    "espnId": 2641
+  },
+  {
+    "name": "UCF Knights",
+    "conference": "Big 12",
+    "espnId": 2116
+  },
+  {
+    "name": "Utah Utes",
+    "conference": "Big 12",
+    "espnId": 254
+  },
+  {
+    "name": "West Virginia Mountaineers",
+    "conference": "Big 12",
+    "espnId": 277
+  },
+  {
+    "name": "Illinois Fighting Illini",
+    "conference": "Big Ten",
+    "espnId": 356
+  },
+  {
+    "name": "Indiana Hoosiers",
+    "conference": "Big Ten",
+    "espnId": 84
+  },
+  {
+    "name": "Iowa Hawkeyes",
+    "conference": "Big Ten",
+    "espnId": 2294
+  },
+  {
+    "name": "Maryland Terrapins",
+    "conference": "Big Ten",
+    "espnId": 120
+  },
+  {
+    "name": "Michigan State Spartans",
+    "conference": "Big Ten",
+    "espnId": 127
+  },
+  {
+    "name": "Michigan Wolverines",
+    "conference": "Big Ten",
+    "espnId": 130
+  },
+  {
+    "name": "Minnesota Golden Gophers",
+    "conference": "Big Ten",
+    "espnId": 135
+  },
+  {
+    "name": "Nebraska Cornhuskers",
+    "conference": "Big Ten",
+    "espnId": 158
+  },
+  {
+    "name": "Northwestern Wildcats",
+    "conference": "Big Ten",
+    "espnId": 77
+  },
+  {
+    "name": "Ohio State Buckeyes",
+    "conference": "Big Ten",
+    "espnId": 194
+  },
+  {
+    "name": "Oregon Ducks",
+    "conference": "Big Ten",
+    "espnId": 2483
+  },
+  {
+    "name": "Penn State Nittany Lions",
+    "conference": "Big Ten",
+    "espnId": 213
+  },
+  {
+    "name": "Purdue Boilermakers",
+    "conference": "Big Ten",
+    "espnId": 2509
+  },
+  {
+    "name": "Rutgers Scarlet Knights",
+    "conference": "Big Ten",
+    "espnId": 164
+  },
+  {
+    "name": "UCLA Bruins",
+    "conference": "Big Ten",
+    "espnId": 26
+  },
+  {
+    "name": "USC Trojans",
+    "conference": "Big Ten",
+    "espnId": 30
+  },
+  {
+    "name": "Washington Huskies",
+    "conference": "Big Ten",
+    "espnId": 264
+  },
+  {
+    "name": "Wisconsin Badgers",
+    "conference": "Big Ten",
+    "espnId": 275
+  },
+  {
+    "name": "Delaware Blue Hens",
+    "conference": "Conference USA",
+    "espnId": 48
+  },
+  {
+    "name": "Florida International Panthers",
+    "conference": "Conference USA",
+    "espnId": 2229
+  },
+  {
+    "name": "Jacksonville State Gamecocks",
+    "conference": "Conference USA",
+    "espnId": 55
+  },
+  {
+    "name": "Kennesaw State Owls",
+    "conference": "Conference USA",
+    "espnId": 338
+  },
+  {
+    "name": "Liberty Flames",
+    "conference": "Conference USA",
+    "espnId": 2335
+  },
+  {
+    "name": "Middle Tennessee Blue Raiders",
+    "conference": "Conference USA",
+    "espnId": 2393
+  },
+  {
+    "name": "Missouri State Bears",
+    "conference": "Conference USA",
+    "espnId": 2623
+  },
+  {
+    "name": "New Mexico State Aggies",
+    "conference": "Conference USA",
+    "espnId": 166
+  },
+  {
+    "name": "Sam Houston Bearkats",
+    "conference": "Conference USA",
+    "espnId": 2534
+  },
+  {
+    "name": "Western Kentucky Hilltoppers",
+    "conference": "Conference USA",
+    "espnId": 98
+  },
+  {
+    "name": "Notre Dame Fighting Irish",
+    "conference": "FBS Independents",
+    "espnId": 87
+  },
+  {
+    "name": "UConn Huskies",
+    "conference": "FBS Independents",
+    "espnId": 41
+  },
+  {
+    "name": "Akron Zips",
+    "conference": "Mid-American",
+    "espnId": 2006
+  },
+  {
+    "name": "Ball State Cardinals",
+    "conference": "Mid-American",
+    "espnId": 2050
+  },
+  {
+    "name": "Bowling Green Falcons",
+    "conference": "Mid-American",
+    "espnId": 189
+  },
+  {
+    "name": "Buffalo Bulls",
+    "conference": "Mid-American",
+    "espnId": 2084
+  },
+  {
+    "name": "Central Michigan Chippewas",
+    "conference": "Mid-American",
+    "espnId": 2117
+  },
+  {
+    "name": "Eastern Michigan Eagles",
+    "conference": "Mid-American",
+    "espnId": 2199
+  },
+  {
+    "name": "Kent State Golden Flashes",
+    "conference": "Mid-American",
+    "espnId": 2309
+  },
+  {
+    "name": "Massachusetts Minutemen",
+    "conference": "Mid-American",
+    "espnId": 113
+  },
+  {
+    "name": "Miami (OH) RedHawks",
+    "conference": "Mid-American",
+    "espnId": 193
+  },
+  {
+    "name": "Ohio Bobcats",
+    "conference": "Mid-American",
+    "espnId": 195
+  },
+  {
+    "name": "Sacramento State Hornets",
+    "conference": "Mid-American",
+    "espnId": 16
+  },
+  {
+    "name": "Toledo Rockets",
+    "conference": "Mid-American",
+    "espnId": 2649
+  },
+  {
+    "name": "Western Michigan Broncos",
+    "conference": "Mid-American",
+    "espnId": 2711
+  },
+  {
+    "name": "Air Force Falcons",
+    "conference": "Mountain West",
+    "espnId": 2005
+  },
+  {
+    "name": "Hawai'i Rainbow Warriors",
+    "conference": "Mountain West",
+    "espnId": 62
+  },
+  {
+    "name": "Nevada Wolf Pack",
+    "conference": "Mountain West",
+    "espnId": 2440
+  },
+  {
+    "name": "New Mexico Lobos",
+    "conference": "Mountain West",
+    "espnId": 167
+  },
+  {
+    "name": "North Dakota State Bison",
+    "conference": "Mountain West",
+    "espnId": 2449
+  },
+  {
+    "name": "Northern Illinois Huskies",
+    "conference": "Mountain West",
+    "espnId": 2459
+  },
+  {
+    "name": "San Jos\u00e9 State Spartans",
+    "conference": "Mountain West",
+    "espnId": 23
+  },
+  {
+    "name": "UNLV Rebels",
+    "conference": "Mountain West",
+    "espnId": 2439
+  },
+  {
+    "name": "UTEP Miners",
+    "conference": "Mountain West",
+    "espnId": 2638
+  },
+  {
+    "name": "Wyoming Cowboys",
+    "conference": "Mountain West",
+    "espnId": 2751
+  },
+  {
+    "name": "Boise State Broncos",
+    "conference": "Pac-12",
+    "espnId": 68
+  },
+  {
+    "name": "Colorado State Rams",
+    "conference": "Pac-12",
+    "espnId": 36
+  },
+  {
+    "name": "Fresno State Bulldogs",
+    "conference": "Pac-12",
+    "espnId": 278
+  },
+  {
+    "name": "Oregon State Beavers",
+    "conference": "Pac-12",
+    "espnId": 204
+  },
+  {
+    "name": "San Diego State Aztecs",
+    "conference": "Pac-12",
+    "espnId": 21
+  },
+  {
+    "name": "Texas State Bobcats",
+    "conference": "Pac-12",
+    "espnId": 326
+  },
+  {
+    "name": "Utah State Aggies",
+    "conference": "Pac-12",
+    "espnId": 328
+  },
+  {
+    "name": "Washington State Cougars",
+    "conference": "Pac-12",
+    "espnId": 265
+  },
+  {
+    "name": "Alabama Crimson Tide",
+    "conference": "SEC",
+    "espnId": 333
+  },
+  {
+    "name": "Arkansas Razorbacks",
+    "conference": "SEC",
+    "espnId": 8
+  },
+  {
+    "name": "Auburn Tigers",
+    "conference": "SEC",
+    "espnId": 2
+  },
+  {
+    "name": "Florida Gators",
+    "conference": "SEC",
+    "espnId": 57
+  },
+  {
+    "name": "Georgia Bulldogs",
+    "conference": "SEC",
+    "espnId": 61
+  },
+  {
+    "name": "Kentucky Wildcats",
+    "conference": "SEC",
+    "espnId": 96
+  },
+  {
+    "name": "LSU Tigers",
+    "conference": "SEC",
+    "espnId": 99
+  },
+  {
+    "name": "Mississippi State Bulldogs",
+    "conference": "SEC",
+    "espnId": 344
+  },
+  {
+    "name": "Missouri Tigers",
+    "conference": "SEC",
+    "espnId": 142
+  },
+  {
+    "name": "Oklahoma Sooners",
+    "conference": "SEC",
+    "espnId": 201
+  },
+  {
+    "name": "Ole Miss Rebels",
+    "conference": "SEC",
+    "espnId": 145
+  },
+  {
+    "name": "South Carolina Gamecocks",
+    "conference": "SEC",
+    "espnId": 2579
+  },
+  {
+    "name": "Tennessee Volunteers",
+    "conference": "SEC",
+    "espnId": 2633
+  },
+  {
+    "name": "Texas A&M Aggies",
+    "conference": "SEC",
+    "espnId": 245
+  },
+  {
+    "name": "Texas Longhorns",
+    "conference": "SEC",
+    "espnId": 251
+  },
+  {
+    "name": "Vanderbilt Commodores",
+    "conference": "SEC",
+    "espnId": 238
+  },
+  {
+    "name": "App State Mountaineers",
+    "conference": "Sun Belt",
+    "espnId": 2026
+  },
+  {
+    "name": "Arkansas State Red Wolves",
+    "conference": "Sun Belt",
+    "espnId": 2032
+  },
+  {
+    "name": "Coastal Carolina Chanticleers",
+    "conference": "Sun Belt",
+    "espnId": 324
+  },
+  {
+    "name": "Georgia Southern Eagles",
+    "conference": "Sun Belt",
+    "espnId": 290
+  },
+  {
+    "name": "Georgia State Panthers",
+    "conference": "Sun Belt",
+    "espnId": 2247
+  },
+  {
+    "name": "James Madison Dukes",
+    "conference": "Sun Belt",
+    "espnId": 256
+  },
+  {
+    "name": "Louisiana Ragin' Cajuns",
+    "conference": "Sun Belt",
+    "espnId": 309
+  },
+  {
+    "name": "Louisiana Tech Bulldogs",
+    "conference": "Sun Belt",
+    "espnId": 2348
+  },
+  {
+    "name": "Marshall Thundering Herd",
+    "conference": "Sun Belt",
+    "espnId": 276
+  },
+  {
+    "name": "Old Dominion Monarchs",
+    "conference": "Sun Belt",
+    "espnId": 295
+  },
+  {
+    "name": "South Alabama Jaguars",
+    "conference": "Sun Belt",
+    "espnId": 6
+  },
+  {
+    "name": "Southern Miss Golden Eagles",
+    "conference": "Sun Belt",
+    "espnId": 2572
+  },
+  {
+    "name": "Troy Trojans",
+    "conference": "Sun Belt",
+    "espnId": 2653
+  },
+  {
+    "name": "UL Monroe Warhawks",
+    "conference": "Sun Belt",
+    "espnId": 2433
+  }
+]
