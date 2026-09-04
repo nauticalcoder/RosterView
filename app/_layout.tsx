@@ -1,19 +1,23 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router/react-navigation';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RootSiblingParent } from 'react-native-root-siblings';
 import { useFonts } from 'expo-font';
-import { Link, Stack } from 'expo-router';
+import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-import { Pressable, useColorScheme } from 'react-native';
+import { useColorScheme } from 'react-native';
+import {
+  configureNotificationHandler,
+  observeNotificationResponses,
+  restoreFridayReminderIfEnabled,
+} from '@/services/fridayReminder';
 import { configureHttp } from '../utils';
-import Colors from '@/constants/Colors';
 import { apiBaseUrl } from '@/constants/ApiConfig';
 import { SelectedTeamsProvider } from '@/context/SelectedTeams';
 import { RostersProvider } from '@/context/Rosters';
 
 configureHttp(apiBaseUrl);
+configureNotificationHandler();
 
 const queryClient = new QueryClient();
 
@@ -23,7 +27,6 @@ export {
 } from 'expo-router';
 
 export const unstable_settings = {
-  // Ensure that reloading on `/modal` keeps a back button present.
   initialRouteName: '(tabs)',
 };
 
@@ -33,7 +36,6 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const [loaded, error] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-    ...FontAwesome.font,
   });
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
@@ -56,6 +58,15 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   const colorScheme = useColorScheme() === 'dark' ? 'dark' : 'light';
+
+  useEffect(() => {
+    const stopObserving = observeNotificationResponses();
+    restoreFridayReminderIfEnabled().catch((error) => {
+      console.warn('Failed to restore Friday reminder', error);
+    });
+    return stopObserving;
+  }, []);
+
   return (
     <RootSiblingParent>
       <QueryClientProvider client={queryClient}>
@@ -63,23 +74,7 @@ function RootLayoutNav() {
           <RostersProvider>
             <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
               <Stack>
-                <Stack.Screen name="(tabs)" options={{ headerShown: true, title: "Roster View", headerRight: () => (
-                    <Link href="/teamPickerModal" asChild>
-                      <Pressable>
-                        {({ pressed }) => (
-                          <FontAwesome
-                            name="gear"
-                            size={25}
-                            color={Colors[colorScheme].text}
-                            style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-                          />
-                        )}
-                      </Pressable>
-                    </Link>
-                  ),
-
-                 }} />
-                <Stack.Screen name="teamPickerModal" options={{ presentation: 'modal', title: "Team" }} />
+                <Stack.Screen name="(tabs)" options={{ headerShown: true, title: "Roster View" }} />
               </Stack>
             </ThemeProvider>
           </RostersProvider>

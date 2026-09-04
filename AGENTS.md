@@ -50,11 +50,12 @@ Roster View is a mobile college-football roster app, rewritten from an older Nat
 ### Product intent (from `readme.md` and current UI)
 
 - Three tabs: home team roster, visiting team roster, and Settings.
-- Team picker modal (gear icon) and the Settings tab to choose which teams are shown.
+- The Settings tab is where teams are chosen.
 - Settings dropdowns currently load hardcoded team names from `assets/ncaa-football-teams.json` (not the API).
 - Selected home and visiting teams live in `context/SelectedTeams.tsx` and drive the first two tab titles.
 - Team selections persist in `expo-sqlite/kv-store` (web uses `localStorage` via `utils/teamSelectionStorage.web.ts`).
 - Settings **Refresh Rosters** fetches ESPN roster data for the selected home and visiting teams (`services/espnRoster.ts`) and stores players plus `updatedAt` in `utils/rosterStorage.ts`.
+- Settings can enable a weekly local notification at Friday 4:00 PM (`services/fridayReminder.ts`) that opens Settings when tapped. Requires a native rebuild after adding `expo-notifications`.
 - Roster rows display Name, Pos, Ht, Wt, Class, and Birthplace.
 
 ### Layout
@@ -62,9 +63,7 @@ Roster View is a mobile college-football roster app, rewritten from an older Nat
 ```
 app/                    Expo Router screens (file-based)
   _layout.tsx           Root stack, QueryClient, theme, splash, HTTP setup
-  (tabs)/               Home + visiting roster tabs
-  teamPickerModal.tsx   Team picker (modal)
-  modal.tsx             Unused leftover picker screen
+  (tabs)/               Home, visiting roster, and Settings tabs
 api/                    TanStack Query hooks (`useTeamList`, `useApiError`)
 components/             PlayerList, Themed wrappers, leftover template bits
 constants/              Colors, API base URL
@@ -88,10 +87,8 @@ types/                  API error shapes
 These are still true unless a later change explicitly completed them:
 
 - `models/Conference.ts` looks like a Team type, not a conference.
-- The leftover team picker modal Select/Cancel still do nothing; Settings is the working team picker.
 - SQLite `utils/db.ts` is unused; roster cache uses the kv-store helpers instead.
 - API URL is hardcoded to localhost. `app.json` `extra.apiUrl` is empty and unused.
-- `app/modal.tsx` is leftover and not in the root Stack.
 - Template leftovers: `EditScreenInfo`, `ExternalLink` (only used by EditScreenInfo), large commented blocks.
 
 ### Conventions for this repo
